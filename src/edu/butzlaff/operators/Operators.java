@@ -24,6 +24,8 @@ public class Operators {
     System.out.println("Negative: " + negative());
     System.out.println("Negation: " + negation());
 
+
+    System.out.println("If ternário: " + ifTernario(10));
   }
 
   // operadores unários = operadores que atuam em apenas um operando
@@ -59,5 +61,10 @@ public class Operators {
     boolean isTrue = true;
     isTrue = !isTrue; // operador de negação (!)
     return isTrue;
+  }
+
+  public static String ifTernario(int number) {
+    String result = number > 10 ? "Maior que 10" : "Menor ou igual a 10";
+    return result;
   }
 }
